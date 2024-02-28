@@ -20,7 +20,7 @@ html {
 
     font-family: "Ubunto Mono", monospace;
     letter-spacing: 0.5px;
-   background-image: url("https: FRARTBX24.github.io/illustration/crepisZer.jpg");
+   background-image: url("../illustration/crepisZer.jpg");
    background-color: transparent;
 
     box-sizing: border-box;
@@ -236,7 +236,7 @@ li:last-child {
 
 .container02{
     font-style: normal;
-    background-image: url("https: FRARTBX24.github.io/illustration/ada.jpg");
+    background-image: url("../illustration/ada.jpg");
     opacity: 0.45;
     filter: alpha(opacity=45); /* For IE8 and earlier */
 

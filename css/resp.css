@@ -71,8 +71,37 @@ header {
     object-fit: fill;
 }
 .icon:hover {
-    border: dashed var(--BORDERCOLOR) 3px;
+    opacity: 0.5;
 }
+
+@keyframes flickerAnimation {
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-o-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-moz-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-webkit-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+
+header a:hover {
+     -webkit-animation: flickerAnimation .5s infinite;
+     -moz-animation: flickerAnimation .5s infinite;
+     -o-animation: flickerAnimation .5s infinite;
+      animation: flickerAnimation .5s infinite;
+  }
+
 
 .titre {
     font-weight: 300;
@@ -105,16 +134,39 @@ left: 0;
    margin: 5px 10px;
    padding: 5px;
    margin-top: 95px;
+   position: relative;
 }
+
 
 .questions a {
     color: black;
     text-decoration: none;
     font-size: 20px;
     padding: 5px;
+
+    font-weight: 500;
 } 
 
 
+ .questions  a:after {
+    content: "";
+    position:absolute;
+    background-color: var(--BORDERCOLOR);
+  
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.8s ease;
+  }
+  
+.questions a:hover:after {
+    width: 100%;
+  }
+
+  .questions a:hover {
+    font-weight: 750 ;
+  }
 
 /* REPONSES */
 

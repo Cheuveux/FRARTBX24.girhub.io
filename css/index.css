@@ -217,16 +217,16 @@ li:last-child {
 .content0222 {
 
     width: 350px;
-    height: 500px;
+    height: 600px;
     margin-left: 10px;
    
     position: relative;
-    top: 40px;
+    top: 20px;
     left: 75px;
 
     letter-spacing: 1.5px;
     font-style: normal;
-    font-size: 18px;
+    font-size: 17px;
     word-spacing: 1.5em;
 
 
@@ -310,6 +310,7 @@ a:hover {
 }
   .container03 .content011 {
     margin: 5%;
+    margin-top: 0;
 
     text-transform: uppercase;
     font-style: normal;

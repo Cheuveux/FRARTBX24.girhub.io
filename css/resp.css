@@ -22,7 +22,7 @@
 html {
 
     font-family: "Ubunto Mono", monospace;
-    letter-spacing: 0.5cap;
+    letter-spacing: 0.5px;
    background-image: url("../illustration/crepisZer.jpg");
    background-color: transparent;
 
@@ -161,7 +161,7 @@ left: 0;
   }
   
 .questions a:hover:after {
-  
+
     width: 100%;
   }
 
